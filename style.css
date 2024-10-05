@@ -1,0 +1,100 @@
+
+/* Renkler Dota2 resmi sitesinden Color Picker aracılığı ile seçildi */
+.custom-gradient {
+    background: linear-gradient(to right, #f5984c, #f12906);
+    color: white;
+}
+.app-badge{
+    height: 3rem;
+}
+/* Custom gradient ile aynı renkler uygulandı */
+.custom-gradient-color {
+    background: -webkit-linear-gradient(#f5984c, #f12906);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.font-alt{
+    font-family: "Kanit" !important;
+}
+/* Resimle yazı aynı hizada olması için CSS aracılığı ile resim girildi */
+section.fifth{
+    position: relative;
+    padding: 9rem 0;
+    background-image: url(./assets/img/1600x900.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Yazının resmin üstüne çıkması için relative pozisyonu ve z-index girildi */
+section.fifth .content{
+    position: relative;
+    z-index: 1;
+}
+
+/* Resmin üstüne gelen opak katman */
+section.fifth .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0; 
+}
+
+section.fifth a{
+    text-decoration: unset;
+    color: white;
+}
+
+@media (min-width: 576px) {
+.device-wrapper {
+        max-width: 40rem;
+    }
+}
+
+@media (min-width: 768px) {
+.device-wrapper {
+        max-width: 45rem;
+    }
+}
+@media (min-width: 992px) {
+.device-wrapper {
+        max-width: 45rem;
+    }
+}
+@media (min-width: 1200px) {
+.device-wrapper {
+        max-width: 45rem;
+    }
+}
+@media (min-width: 1400px) {
+
+    }
+.device-wrapper {
+        max-width: 50rem;
+    }
+
+footer a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+footer a:hover,
+footer a:active,
+footer a:focus {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: underline;
+}
+
+.masthead {
+    padding-top: 9.5rem;
+    padding-bottom: 5rem;
+}
+.masthead-device-mockup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
